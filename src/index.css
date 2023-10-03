@@ -1,16 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat+Alternates:ital,wght@0,400;0,700;0,800;1,400&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  font-family: "Inter", sans-serif;
   background: #150e28;
   color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inclusive Sans", sans-serif;
+}
+
+p {
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .btn-gradient {
@@ -22,6 +30,14 @@ html {
     #bb2eed,
     #903aff
   );
+  background-size: 100% 100%;
+  transition: background-size 2s;
+  transition: color 2s;
+}
+
+.btn-gradient:hover {
+  background-size: 80% 100%;
+  color: black;
 }
 
 .form-bg {
@@ -39,8 +55,8 @@ html {
 .subhead-text {
   color: #d434fe;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Clash Display;
-  font-size: 32px;
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -48,8 +64,8 @@ html {
 
 .paragraph-text {
   color: #fff;
-  font-family: Montserrat;
-  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

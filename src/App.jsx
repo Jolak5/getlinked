@@ -6,10 +6,11 @@ function App() {
  
 
   return (
-    <>
+    <div className="relative x-0 bg-primary">
       <Navbar />
-      <Contact />
-    </>
+      <div ><Contact /></div>
+      
+    </div>
   )
 }
 
